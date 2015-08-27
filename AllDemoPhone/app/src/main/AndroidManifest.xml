@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.alldemophone" >
+    <!--添加发短信的权限-->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- 发送短信权限-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <!-- 读取短信权限-->
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <!-- 写入短信权限-->
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <!--拨打电话权限-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 读取电话状态的权限-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 处理向外呼叫电话的权限-->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <!-- 添加SD卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 添加SD卡的读权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 添加网络权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 开机启动权限  监听开机时，高版本需要，低版本不需要-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>-->
+
+    <!-- 录制音频的权限-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hudie"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name="cn.com.activity.Day01"/>
+        <activity android:name="cn.com.activity.Day01_01"/>
+        <activity android:name="cn.com.activity.Day01_02"/>
+        <activity android:name="cn.com.activity.Day01_03"/>
+        <activity android:name="cn.com.activity.Day01_04"/>
+        <activity android:name="cn.com.activity.Day01_05"/>
+        <activity android:name="cn.com.activity.Day02"/>
+        <activity android:name="cn.com.activity.Day02_01"/>
+        <activity android:name="cn.com.activity.Day02_02"/>
+        <activity android:name="cn.com.activity.Day02_03"/>
+        <activity android:name="cn.com.activity.Day02_04"/>
+        <activity android:name="cn.com.activity.Day02_05"/>
+        <activity android:name="cn.com.activity.Day02_06"/>
+        <activity android:name="cn.com.activity.Day02_07"/>
+        <activity android:name="cn.com.activity.Day03"/>
+        <activity android:name="cn.com.activity.Day03_01"/>
+        <activity android:name="cn.com.activity.Day03_02"/>
+        <activity android:name="cn.com.activity.Day03_03"/>
+        <activity android:name="cn.com.activity.Day03_04"/>
+        <!-- android:theme="@style/AppTheme"  设置主题-->
+        <activity android:name="cn.com.activity.Day03_05"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="cn.com.activity.Day04"/>
+        <activity android:name="cn.com.activity.Day04_01"/>
+        <activity android:name="cn.com.activity.Day04_02"/>
+        <activity android:name="cn.com.activity.Day04_03"/>
+        <activity android:name="cn.com.activity.Day04_04"/>
+        <activity android:name="cn.com.activity.Day04_05"/>
+        <activity android:name="cn.com.activity.Day04_06"/>
+        <activity android:name="cn.com.activity.Day05"/>
+        <activity android:name="cn.com.activity.Day05_01"/>
+        <activity android:name="cn.com.activity.Day05_02"/>
+        <activity android:name="cn.com.activity.Day05_03"/>
+        <activity android:name="cn.com.activity.Day05_04"/>
+        <activity android:name="cn.com.activity.Day05_05"/>
+        <activity android:name="cn.com.activity.Day05_06"/>
+        <activity android:name="cn.com.activity.Day05_07"/>
+        <activity android:name="cn.com.activity.Day05_08"/>
+        <activity android:name="cn.com.activity.Day05_09"/>
+        <activity android:name="cn.com.activity.Day05_10"/>
+        <activity android:name="cn.com.activity.Day06"/>
+        <activity android:name="cn.com.activity.Day06_01"/>
+        <activity android:name="cn.com.activity.Day06_01_01"/>
+        <activity android:name="cn.com.activity.Day06_01_02"/>
+        <activity android:name="cn.com.activity.Day06_02"/>
+
+        <!--显式意图注册-->
+        <activity android:name="cn.com.activity.Day06_02_01"></activity>
+        <!--隐式意图注册-->
+        <activity android:name="cn.com.activity.Day06_02_02">
+            <intent-filter>
+                <action android:name="cn.com.activity.action.Day06_02_02" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="cn.com.activity.Day06_03"/>
+        <!-- 注册第二个界面，使用隐式意图的手法注册 -->
+        <activity android:name="cn.com.activity.Day06_03_01">
+            <intent-filter>
+                <!-- 动作 -->
+                <action android:name="cn.com.alldemophone.action.Day06_03_01"/>
+                <!-- 分类 -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 数据 -->
+                <data android:scheme="baidu" android:host="www.baidu.com" android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.com.activity.Day06_03_02"/>
+        <activity android:name="cn.com.activity.Day06_04"/>
+        <activity android:name="cn.com.activity.Day06_05"/>
+        <activity android:name="cn.com.activity.Day06_05_01"/>
+        <activity android:name="cn.com.activity.Day06_05_02"/>
+        <activity android:name="cn.com.activity.Day06_06"/>
+        <activity android:name="cn.com.activity.Day06_07"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            />
+        <activity android:name="cn.com.activity.Day06_08"/>
+        <activity android:name="cn.com.activity.Day07"/>
+        <!-- 注册监听 SD卡状态-->
+        <receiver android:name="cn.com.activity.Day07_01_01">
+            <!-- 3.调频  实际上就是只收听属于这个频道的广播。其他广播完全忽略掉-->
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="cn.com.activity.Day07_01"/>
+        <activity android:name="cn.com.activity.Day07_02"/>
+
+        <!-- 注册监听开机启动-->
+        <receiver android:name="cn.com.activity.Day07_02_01">
+            <!-- 3.监听开机启动完成的广播 -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="cn.com.activity.Day07_03"/>
+        <!-- 监听向外呼叫电话的动作-->
+        <receiver android:name="cn.com.activity.Day07_03_01">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="cn.com.activity.Day07_04"/>
+        <!-- 监听应用安装与卸载-->
+        <receiver android:name="cn.com.activity.Day07_04_01">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="cn.com.activity.Day07_05"/>
+        <!-- 监听短信到来 -->
+        <receiver android:name="cn.com.activity.Day07_05_01">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="cn.com.activity.Day07_06"/>
+        <!-- 监听自己定义的广播-->
+        <receiver android:name="cn.com.activity.Day07_06_01">
+            <intent-filter>
+                <action android:name="cn.com.alldemophone.XWLB"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="cn.com.activity.Day07_07"/>
+        <activity android:name="cn.com.activity.Day07_08"/>
+        <receiver android:name="cn.com.activity.Day07_08_01">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.com.alldemophone.action.POTATO" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.com.activity.Day07_08_02">
+            <intent-filter android:priority="700">
+                <action android:name="cn.com.alldemophone.action.POTATO" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.com.activity.Day07_08_03">
+            <intent-filter android:priority="300">
+                <action android:name="cn.com.alldemophone.action.POTATO" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.com.activity.Day07_08_04">
+            <intent-filter android:priority="-1000">
+                <action android:name="cn.com.alldemophone.action.POTATO" />
+            </intent-filter>
+        </receiver>
+        <!--
+        监听屏幕的锁定和点亮,因为使用太平凡，所以不允许在清单文件注册
+        <receiver android:name="cn.com.activity.Day07_09_01" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON" />
+
+                <action android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+        </receiver> -->
+        <activity android:name="cn.com.activity.Day07_09"/>
+
+        <activity android:name="cn.com.activity.Day07_10"/>
+        <!-- 注册自己的服务 -->
+        <service android:name="cn.com.activity.Day07_10_01" />
+
+        <activity android:name="cn.com.activity.Day07_11"/>
+        <!-- 注册服务-->
+        <service android:name="cn.com.activity.Day07_11_01"/>
+
+        <activity android:name="cn.com.activity.Day08"/>
+        <activity android:name="cn.com.activity.Day08_01"/>
+        <!-- 注册服务-->
+        <service android:name="cn.com.activity.Day08_01_01"/>
+
+        <activity android:name="cn.com.activity.Day08_02"/>
+        <!-- 注册服务-->
+        <service android:name="cn.com.activity.Day08_02_01"/>
+
+        <activity android:name="cn.com.activity.Day08_03"/>
+        <!-- 注册服务-->
+        <service android:name="cn.com.activity.Day08_03_01"/>
+
+        <activity android:name="cn.com.activity.Day08_04"/>
+        <!-- 注册服务-->
+        <service android:name="cn.com.activity.Day08_04_01"/>
+
+        <activity android:name="cn.com.activity.Day08_05"/>
+        <!-- 注册服务-->
+        <service android:name="cn.com.activity.Day08_05_01"/>
+
+        <activity android:name="cn.com.activity.Day08_06"/>
+        <!-- 为了能让其他应用能够启动该服务，那么必须使用隐式手法注册 -->
+        <service android:name="cn.com.activity.Day08_06_01">
+            <intent-filter>
+                <action android:name="cn.com.alldemo.phone.DAY08_06_01"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name="cn.com.activity.Day08_07"/>
+        <activity android:name="cn.com.activity.Day08_08"/>
+        <!-- 注册服务-->
+        <service android:name="cn.com.activity.Day08_08_01">
+            <intent-filter>
+                <action android:name="cn.com.activity.Day08_08_01"/>
+            </intent-filter>
+        </service>
+        <activity android:name="cn.com.activity.Day08_09"/>
+        <activity android:name="cn.com.activity.Day08_10"/>
+        <!-- 注册服务-->
+        <service android:name="cn.com.activity.Day08_10_01"/>
+
+        <activity android:name="cn.com.activity.Day09"/>
+        <activity android:name="cn.com.activity.Day09_01"/>
+        <!-- 内容提供者 authorities定义的是标识唯一的，可自定义 -->
+        <provider
+            android:authorities="cn.com.activity.Day09_01_02"
+            android:name="cn.com.activity.Day09_01_02"/>
+
+        <activity android:name="cn.com.activity.Day09_02"/>
+        <activity android:name="cn.com.activity.Day09_03"/>
+        <activity android:name="cn.com.activity.Day09_04"/>
+        <activity android:name="cn.com.activity.Day09_05"/>
+        <activity android:name="cn.com.activity.Day09_06"/>
+        <activity android:name="cn.com.activity.Day09_07"/>
+        <activity android:name="cn.com.activity.Day09_08"/>
+        <activity android:name="cn.com.activity.Day09_09"/>
+        <activity android:name="cn.com.activity.Day10"/>
+        <activity android:name="cn.com.activity.Day10_01"/>
+        <activity android:name="cn.com.activity.Day10_02"/>
+        <activity android:name="cn.com.activity.Day10_03"/>
+        <activity android:name="cn.com.activity.Day10_04"/>
+        <activity android:name="cn.com.activity.Day10_05"/>
+        <activity android:name="cn.com.activity.Day10_06"/>
+        <activity android:name="cn.com.activity.Day10_07"/>
+        <activity android:name="cn.com.activity.Day10_08"/>
+        <activity android:name="cn.com.activity.Day10_09"/>
+        <activity android:name="cn.com.activity.Day10_10"/>
+        <activity android:name="cn.com.activity.Day10_11"/>
+        <activity android:name="cn.com.activity.Day10_12"/>
+        <activity android:name="cn.com.activity.Day10_13"/>
+        <activity android:name="cn.com.activity.Day10_14"/>
+        <activity android:name="cn.com.activity.Day10_15"/>
+        <activity android:name="cn.com.activity.Day11"/>
+        <activity android:name="cn.com.activity.Day11_01"/>
+        <activity android:name="cn.com.activity.Day11_02"/>
+        <activity android:name="cn.com.activity.Day11_03"/>
+        <activity android:name="cn.com.activity.Day11_04"/>
+        <activity android:name="cn.com.activity.Day11_05"/>
+        <activity android:name="cn.com.activity.Day11_06"/>
+        <activity android:name="cn.com.activity.Day11_07"/>
+        <activity android:name="cn.com.activity.Day11_08"/>
+
+
+
+
+
+
+
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <!-- android:screenOrientation="portrait"
+          portrait:表示始终竖屏 landscape：表示始终横屏 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
