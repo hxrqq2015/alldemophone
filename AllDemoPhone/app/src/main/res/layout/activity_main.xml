@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="课程学习内容"
+        android:textSize="25sp"
+        android:gravity="center"
+        />
+<ScrollView
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/day01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day01学习内容" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/day02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day02学习内容" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/day03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day03学习内容" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/day04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day04学习内容" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/day05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day05学习内容" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/day06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day06学习内容" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/day07"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day07学习内容" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/day08"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day08学习内容" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/day09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day09学习内容" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/day10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day10学习内容" />
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/day11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day11学习内容" />
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="day06_03学习内容"/>
+    <Button
+        android:layout_marginTop="50dp"
+        android:onClick="one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01隐式应用"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:onClick="two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="02版权应用"
+        android:textSize="20sp"/>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.com.view.SmartImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/hudie" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="这是新闻的标题"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textColor="#BB000000"
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="这是新闻的描述"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_marginRight="10dp"
+        android:id="@+id/tv_comment"
+        android:layout_below="@id/tv_desc"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论：13个"
+        android:textSize="10sp"
+        android:textColor="#AA000000"
+        />
+</RelativeLayout>

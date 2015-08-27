@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+
+     >
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:onClick="createPrivate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="生成私有的文件" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:onClick="createPublic"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="生成公开的文件" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:onClick="createWriteOnly"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="生成只写的文件" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:onClick="createReadOnly"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="生成只读的文件" />
+
+</LinearLayout>

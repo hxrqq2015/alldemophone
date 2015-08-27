@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="我的示例"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edi_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入网址"
+        android:text="http://188.188.7.23:8080/AllTestWeb"/>
+    <!--android:text="http://10.0.2.2:8080/AllTestWeb"/>-->
+    <Button
+        android:onClick="getsource"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="获取网页源码"/>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tex_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>

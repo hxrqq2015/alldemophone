@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity启动模式"
+        android:textSize="25sp"/>
+<TextView
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25sp"
+    android:text=" activity android:name=cn.com.activity.Day06_08, android:launchMode='standard';
+    ----android:launchMode='singleTop'---android:launchMode='singleTask'---android:launchMode='singleInstance'---
+    "/>
+</LinearLayout>

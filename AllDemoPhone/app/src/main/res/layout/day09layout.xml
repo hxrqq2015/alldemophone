@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="day09学习内容"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/day09_but01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day09_01数据库" />
+            <Button
+                android:id="@+id/day09_but02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day09_02银行行长" />
+            <Button
+                android:id="@+id/day09_but03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day09_03短信内容提供者" />
+            <Button
+                android:id="@+id/day09_but04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day09_04界面提醒通知" />
+            <Button
+                android:id="@+id/day09_but05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day09_05装X神奇" />
+            <Button
+                android:id="@+id/day09_but06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day09_06读取联系人" />
+            <Button
+                android:id="@+id/day09_but07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day09_07添加联系人" />
+            <Button
+                android:id="@+id/day09_but08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day09_08内容观察者" />
+            <Button
+                android:id="@+id/day09_but09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day09_09短信内容观察者" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

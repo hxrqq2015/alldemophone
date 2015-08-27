@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="day08学习内容"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/day08_but01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_01startService启动服务缺陷" />
+
+            <Button
+                android:id="@+id/day08_but02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_02binderService绑定服务" />
+
+            <Button
+                android:id="@+id/day08_but03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_03binderService接口绑定服务" />
+
+            <Button
+                android:id="@+id/day08_but04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_04binderService服务生命周期" />
+
+            <Button
+                android:id="@+id/day08_but05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_05两种服务的区别" />
+
+            <Button
+                android:id="@+id/day08_but06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_06远程服务" />
+            <Button
+                android:id="@+id/day08_but07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_07调用远程服务" />
+            <Button
+                android:id="@+id/day08_but08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_08黑马支付宝" />
+            <Button
+                android:id="@+id/day08_but09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_09捕鱼达人" />
+            <Button
+                android:id="@+id/day08_but10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="day08_10电话窃听器" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

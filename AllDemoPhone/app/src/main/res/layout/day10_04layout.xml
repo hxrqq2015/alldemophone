@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="请选择画笔的颜色：" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+        <View
+            android:layout_marginLeft="8dp"
+            android:id="@+id/hei"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#000000" />
+        <View
+            android:id="@+id/red"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#ff0000" />
+
+        <View
+            android:id="@+id/green"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#00ff00" />
+
+        <View
+            android:id="@+id/blue"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#0000ff" />
+
+        <View
+            android:id="@+id/yellow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#ffff00" />
+
+        <View
+            android:id="@+id/purple"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#ff00ff" />
+        <Button
+           android:onClick="qingkong"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="清空画布"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="请选择画笔的粗细：" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="20"
+        android:progress="5" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="720dp"
+        android:layout_height="888dp" />
+
+
+</LinearLayout>

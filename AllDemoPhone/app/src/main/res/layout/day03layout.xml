@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day03学习内容"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/day03_but01"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day03_01listView使用"/>
+    <Button
+        android:id="@+id/day03_but02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day03_02学生管理系统_数据库版"/>
+    <Button
+        android:id="@+id/day03_but03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day03_03常见的对话框"/>
+    <Button
+        android:id="@+id/day03_but04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day03_04图形动画"/>
+    <Button
+        android:id="@+id/day03_but05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="day03_04国际化、样式、主题"/>
+</LinearLayout>

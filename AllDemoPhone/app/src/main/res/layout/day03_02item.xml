@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:id="@+id/day03_02_ima_item_01"
+        android:layout_centerVertical="true"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/nan" />
+    <TextView
+        android:layout_toRightOf="@id/day03_02_ima_item_01"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/day03_02_tex_item_01"
+        android:layout_centerVertical="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="姓名"/>
+    <TextView
+        android:layout_toRightOf="@id/day03_02_tex_item_01"
+        android:id="@+id/day03_02_tex_item_02"
+        android:layout_centerVertical="true"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="年龄"/>
+    <TextView
+        android:layout_toRightOf="@id/day03_02_tex_item_02"
+        android:id="@+id/day03_02_tex_item_03"
+        android:layout_centerVertical="true"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="性别"/>
+    <ImageView
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/day03_02_ima_item_02"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete"/>
+</RelativeLayout>
