@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:layout_marginTop="50dp"
+        android:onClick="bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定服务" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:onClick="buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="购买炮弹" />
+    <Button
+        android:layout_marginTop="10dp"
+        android:onClick="unbind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消绑定服务" />
+</LinearLayout>
